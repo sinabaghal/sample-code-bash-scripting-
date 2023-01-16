@@ -1,0 +1,6 @@
+AUC SCORE: 0.8845014152917822     ++++++ MODEL: ('xgboost',)
+AUC SCORE: 0.8892966227781162     ++++++ MODEL: ('catboost',)
+AUC SCORE: 0.8886871977222712     ++++++ MODEL: ('rf',)
+AUC SCORE: 0.7867551068617821     ++++++ MODEL: ('mlp',)
+AUC SCORE: 0.8556441753386961     ++++++ MODEL: ('svc',)
+AUC SCORE: ('xgboost', 'catboost', 'rf')     ++++++ MODELS: 0.8925132515240807
