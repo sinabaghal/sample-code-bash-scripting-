@@ -6,11 +6,11 @@ DATA_DIR="./data/"
 OUTPUT_DIR="./outputs/"$MODEL_NAME
 RBF=0
 
-mkdir -p $OUTPUT_DIR"figs"
-mkdir -p $OUTPUT_DIR"figs/rbf"
+mkdir -p $OUTPUT_DIR"/figs"
+mkdir -p $OUTPUT_DIR"/figs/rbf"
 
-mkdir -p $OUTPUT_DIR"csv"
-mkdir -p $OUTPUT_DIR"csv/rbf"
+mkdir -p $OUTPUT_DIR"/csv"
+mkdir -p $OUTPUT_DIR"/csv/rbf"
 
 
 if [ $RBF -eq 0 ]
