@@ -6,7 +6,7 @@ Suppose that I have a dataset X that I wish to implement (structurally similar) 
 
 Now, imagine that, for example, my goal is to use the tree based algorithms mentioned above and run them over a range of hyperparameters for dataset X for the purpose of a classification task and I would like to have all the resulting outputs saved in some output directory. Here there are some common pain points:
 
-a) How should I create my these directories so that I know the corresponding hyperparameters for the outputs therein? What if I need to run multiple experiments and wish to have my results saved for comparison in future? 
+a) How should I create these directories so that I know the corresponding hyperparameters for the outputs in it? What if I need to run multiple experiments and wish to have my results saved for comparison in future? 
 
 b) How to not accidentally overwrite the previous results (and waste lots of computation already done)?
 
