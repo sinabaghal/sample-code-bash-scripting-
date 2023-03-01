@@ -10,7 +10,7 @@ a) How should I create my these directories so that I know the corresponding hyp
 
 b) How to not accidentally overwrite the previous results (and waste lots of computation already done)?
 
-c) What if I just need to augment  my algorithms a bit and re-run the entire experiments again? I cannot go through the hassle of creating output directories each time. For example, if I wish to apply Radial Basis Function to perform some dimensionality reduction, I would like to have an output dir named (say) rbf created inside the output dir where all the results will be saved. 
+c) What if I just need to augment  my algorithms a bit and re-run the entire experiments again? I cannot go through the hassle of creating output directories each time. For instance, if I wish to apply Radial Basis Function to perform some dimensionality reduction, I would like to have an output dir named (say) rbf created inside the output dir where all the results will be saved. 
 
 d) What if, all of a sudden, I realize that the specifics I chose for my figures (e.g., titles, size, etc) sound off and I wish to change them across all my outputs. Should I open up each python file separately and change the title font size? This does seem a lot of work and often leads to inconsistencies.  
 
@@ -24,7 +24,7 @@ a) All the hyperparameters needed inside python files are to be included inside 
 
 b) All the paths for directories we wish to use for outputs. We could simply command it to create the directory if it already does not exist. No need to head over to File Explorer.  This is particularly convenient as for example in item c) above, if we wish to run the same experiments on dimensionally reduced dataset, we could simply alter the output file via a simple if statement. If RBF=0, then OUPUTDIR=outputs/tree_based/model_name. Else  OUPUTDIR=outputs/tree_based/model_name/rbf. 
 
-Note that you could pass the model name you wish to run as an argument to your bash file. For example, the following command can be used to run the driver_treebased.sh file: bash driver_treebased.sh xgboost. This means that I have written inside driver_treebased.sh that xgboost will be considered as my model's name and this will be incorporated inside the OUTPUTDIR and anywhere else that it is needed. 
+Note that you could pass the model name you wish to run as an argument to your bash file. For example, the following command can be used to run the driver_treebased.sh file: bash driver_treebased.sh xgboost. This means that I have written inside driver_treebased.sh that xgboost will be considered as my model's name and this will be incorporated inside the OUTPUTDIR and anywhere else that is needed. 
 
 Now heading to the python files, they need to contain an argument parser.  All the arguments defined inside your bash scripts will appear in the name space. You need to 'parse' them. Voila! You are done! Simply run the bash scripts and have all the outputs saved.  As you could see, this way, you could only change one single bash file to experiment with more hyperparameters.
 
