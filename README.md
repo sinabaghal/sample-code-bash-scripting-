@@ -18,7 +18,7 @@ These pain points all sound familiar for anyone who has been coding for at least
 
 Now lets see how bash scripting will save you some good time as I will explain below. 
 
-Suppose that you are inside your working dir. Name it myproj. First, we need two subfolders: data and src. myproj/data contains the dataset X and src contains all the python files that contain my algorithms.  Inside the myproj, I would only insert the bash scripts that are used for running the python files.  The bash file contain:
+Suppose that you are inside your working dir. Name it myproj. First, we need two subfolders: data and src. myproj/data contains the dataset X and src contains all the python files that contain my algorithms.  Inside myproj, I would only insert the bash scripts that are used for running the python files. The bash files contain:
 
 a) All the hyperparameters needed inside python files are to be included inside the bash scripts. This could be for example, the number of estimators used inside your random forest algorithm. If you wish to consider a range for your hyperparameter simply define start_num_estimators, end_num_estimators, step_num_estimators. 
 
