@@ -26,7 +26,7 @@ b) All the paths for directories we wish to use for outputs. We could simply com
 
 Note that you could pass the model name you wish to run as an argument to your bash file. For example, the following command can be used to run the driver_treebased.sh file: bash driver_treebased.sh xgboost. This means that I have written inside driver_treebased.sh that xgboost will be considered as my model's name and this will be incorporated inside the OUTPUTDIR and anywhere else that it is needed. 
 
-Now heading to the python files, they need to contain an argument parser.  All the arguments defined inside your bash scripts will appear in the name space. You need to 'parse' them. Voila! You are done! Simply run the bash scripts and have all the outputs saved. 
-
 Now heading to the python files, they need to contain an argument parser.  All the arguments defined inside your bash scripts will appear in the name space. You need to 'parse' them. Voila! You are done! Simply run the bash scripts and have all the outputs saved.  As you could see, this way, you could only change one single bash file to experiment with more hyperparameters.
+
+
 
