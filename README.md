@@ -2,7 +2,7 @@
 
 Bash scripting can significantly streamline your data science and machine learning projects.
 
-Consider a dataset \( X \) on which you want to apply a series of structurally similar algorithms, $\text{Alg}_1, \text{Alg}_2, \ldots, \text{Alg}_m$. By "structurally similar," I mean that these algorithms share substantial similarities in their hyperparameters, such as their inputs. For example, tree-based algorithms for tabular datasets—like XGBoost, Random Forest, and CatBoost—have similar hyperparameters, including `num_estimators` and `max_depth`. The outputs typically include figures, spreadsheets, logs (which can record errors during execution), F1 scores, and more.
+Consider a dataset $X$ on which you want to apply a series of structurally similar algorithms, $\text{Alg}_1, \text{Alg}_2, \ldots, \text{Alg}_m$. By "structurally similar," I mean that these algorithms share substantial similarities in their hyperparameters, such as their inputs. For example, tree-based algorithms for tabular datasets—like XGBoost, Random Forest, and CatBoost—have similar hyperparameters, including `num_estimators` and `max_depth`. The outputs typically include figures, spreadsheets, logs (which can record errors during execution), F1 scores, and more.
 
 Consider the scenario where you want to use the aforementioned tree-based algorithms to explore a range of hyperparameters on dataset $X$ for a classification task, and you need to save all resulting outputs in a designated directory. Common issues arise in this process:
 
