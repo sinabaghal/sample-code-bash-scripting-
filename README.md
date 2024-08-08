@@ -1,4 +1,4 @@
-# bash_scripting_helps!-
+# Bash Scripts Help!
 
 Bash scripting can significantly streamline your data science and machine learning projects.
 
